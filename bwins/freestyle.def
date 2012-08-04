@@ -1,0 +1,16 @@
+EXPORTS
+	?AddControl@CFuiEnv@@QAEXPAVCFuiControl@@@Z @ 1 NONAME ; void CFuiEnv::AddControl(class CFuiControl *)
+	?Append@CFuiControl@@UAEXPAVCFuiElementBase@@@Z @ 2 NONAME ; void CFuiControl::Append(class CFuiElementBase *)
+	?NewL@CFuiChoiceElement@@SAPAV1@XZ @ 3 NONAME ; class CFuiChoiceElement * CFuiChoiceElement::NewL(void)
+	?NewL@CFuiControl@@SAPAV1@XZ @ 4 NONAME ; class CFuiControl * CFuiControl::NewL(void)
+	?NewL@CFuiEditorElement@@SAPAV1@XZ @ 5 NONAME ; class CFuiEditorElement * CFuiEditorElement::NewL(void)
+	?NewL@CFuiToggleElement@@SAPAV1@XZ @ 6 NONAME ; class CFuiToggleElement * CFuiToggleElement::NewL(void)
+	?Remove@CFuiControl@@UAEXPAVCFuiElementBase@@@Z @ 7 NONAME ; void CFuiControl::Remove(class CFuiElementBase *)
+	?RemoveControl@CFuiEnv@@QAEXPAVCFuiControl@@@Z @ 8 NONAME ; void CFuiEnv::RemoveControl(class CFuiControl *)
+	?SetCurrentTheme@CFuiEnv@@QAEXABVTDesC16@@@Z @ 9 NONAME ; void CFuiEnv::SetCurrentTheme(class TDesC16 const &)
+	?SetSecondaryText@CFuiToggleElement@@QAEXABVTDesC16@@@Z @ 10 NONAME ; void CFuiToggleElement::SetSecondaryText(class TDesC16 const &)
+	?SetText@CFuiEditorElement@@QAEXABVTDesC16@@@Z @ 11 NONAME ; void CFuiEditorElement::SetText(class TDesC16 const &)
+	?SetText@CFuiToggleElement@@QAEXABVTDesC16@@@Z @ 12 NONAME ; void CFuiToggleElement::SetText(class TDesC16 const &)
+	?Static@CFuiEnv@@SAPAV1@XZ @ 13 NONAME ; class CFuiEnv * CFuiEnv::Static(void)
+	?SwitchToControl@CFuiEnv@@QAEXPAVCFuiControl@@@Z @ 14 NONAME ; void CFuiEnv::SwitchToControl(class CFuiControl *)
+

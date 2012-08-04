@@ -1,0 +1,61 @@
+/*
+============================================================================
+ Name		: freestyle.mmp
+ Author	  : Petteri Muilu
+ Copyright   : (C) Copyright 2008 Petteri Muilu
+ Description : This is the project specification file for freestyle.
+============================================================================
+*/
+
+TARGET		  freestyle.lib
+TARGETTYPE	  lib
+UID 0x1000008d 0x20026D02
+
+CAPABILITY ALL -TCB
+
+USERINCLUDE	 ..\inc ..\group
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+
+SOURCE		  FuiDll.cpp FuiControl.cpp FuiToggleElement.cpp FuiEnv.cpp FuiTheme.cpp FuiTimer.cpp FuiPoint.cpp FuiEditorElement.cpp FuiElementBase.cpp
+SOURCE FuiChoiceElement.cpp
+
+SOURCEPATH ..\data
+START RESOURCE	Freestyle.rss
+HEADER
+targetpath	\resource\apps
+lang		sc
+end
+
+
+// In order to use .def files to freeze code you must use one or more DEFFILE lines;
+// see the ones commented out below for examples.
+// By default, the build tools look for the WINSCW def file in a BWINS directory
+// (at the same level as the directory containing the mmp file), 
+// the GCC ARM def file in a BMARM directory, and the ARMV5 def file in a EABI directory. 
+// If your .def files are stored in these default locations, you can simply specify the
+// .def filename(s) with no path. If you want to store .def files in non-default 
+// locations, you will need to specify the paths in the DEFFILE statement(s).
+
+//The following commented out code shows how the build system uses the implicit
+// location for defiles. To create the DEF files Choose Project > Freeze Exports from Carbide
+// or run 'abld freeze' from the command-line
+#if defined (WINS)
+DEFFILE ..\bwins\freestyle.def
+#elif defined (GCC32)
+DEFFILE ..\bmarm\freestyle.def
+#else 
+DEFFILE ..\eabi\freestyle.def
+#endif
+
+nostrictdef
+
+LIBRARY		 euser.lib cone.lib eikcore.lib bitgdi.lib ws32.lib aknicon.lib egul.lib fbscli.lib bafl.lib gdi.lib eikcoctl.lib eikctl.lib form.lib uiklaf.lib etext.lib
+
+#ifdef ENABLE_ABIV2_MODE
+DEBUGGABLE_UDEBONLY
+#endif
+
+SOURCEPATH ..\src
+SOURCE FuiMessageElement.cpp

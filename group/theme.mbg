@@ -1,0 +1,15 @@
+ 
+/* This file has been generated, DO NOT MODIFY. */
+enum TMifTheme
+	{
+	EMbmThemeToggle_options = 16384,
+	EMbmThemeBackground = 16386,
+	EMbmThemeToggle_switch = 16388,
+	EMbmThemeLinebackground = 16390,
+	EMbmThemeRadiobutton_selected = 16392,
+	EMbmThemeRadiobutton_unselected = 16394,
+	EMbmThemeCheckbox_checked = 16396,
+	EMbmThemeCheckbox_unchecked = 16398,
+	EMbmThemeAbc_uppercase = 16400,
+	EMbmThemeLastElement
+	};

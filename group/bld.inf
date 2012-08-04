@@ -1,0 +1,17 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : Petteri Muilu
+ Copyright   : (C) Copyright 2008 Petteri Muilu
+ Description : This file provides the information required for building the
+				whole of a freestyle.
+============================================================================
+*/
+
+PRJ_PLATFORMS
+DEFAULT
+
+PRJ_MMPFILES
+freestyle.mmp
+
+gnumakefile mindu.mk

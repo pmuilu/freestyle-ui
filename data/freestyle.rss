@@ -1,0 +1,30 @@
+NAME FUIR
+
+#include <eikon.rh>
+#include <eikon.rsg>
+#include <avkon.rh>
+#include <avkon.rsg>
+
+RESOURCE RSS_SIGNATURE { }
+RESOURCE TBUF r_default_document_name { buf=""; }
+
+RESOURCE RTXTED r_rich_text_editor
+    {
+    width=30;
+    numlines=1;
+    textlimit=64;
+    flags = EEikEdwinWidthInPixels;
+    avkon_flags = EAknEditorFlagNoT9;
+    default_case = EAknEditorLowerCase;
+    allowed_case_modes = EAknEditorUpperCase | EAknEditorLowerCase;
+    numeric_keymap = EAknEditorPlainNumberModeKeymap;
+    allowed_input_modes = EAknEditorTextInputMode;
+    default_input_mode = EAknEditorTextInputMode;
+    special_character_table = R_AVKON_EMAIL_ADDR_SPECIAL_CHARACTER_TABLE_DIALOG;
+    }    
+    
+    
+RESOURCE SECRETED r_password_secret_editor
+    {
+    num_letters = 30;
+    }
